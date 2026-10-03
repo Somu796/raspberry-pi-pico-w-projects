@@ -1,11 +1,13 @@
-from machine import Pin
 from time import sleep
 
-myLED=Pin('LED', Pin.OUT)
-myLED.value(0)
-time=0.01
+from machine import Pin  # type:ignore  # noqa: PGH003
+
+my_led = Pin("LED", Pin.OUT)
+my_led.value(0)
+
+time = 1
 while True:
     sleep(time)
-    myLED.value(1)
+    my_led.value(1)
     sleep(time)
-    myLED.value(0)
+    my_led.value(0)

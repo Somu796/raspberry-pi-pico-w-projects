@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Micro Pico related
+.micropico
+extensions.json
+settings.json
+*.code-workspace
